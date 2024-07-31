@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>건물 관리 어플</title>
+    <link rel="stylesheet" href="에듀2.css">
+</head>
+<body>
+    <h1>에듀센터 2관 관리 시스템</h1>
+    
+    <label for="floorSelect">층 선택:</label>
+    <select id="floorSelect">
+        <option value="地下2층">지하2층</option>
+        <option value="地下1층">지하1층</option>
+        <option value="1층">1층</option>
+        <option value="2층">2층</option>
+        <option value="3층">3층</option>
+        <option value="4층">4층</option>
+        <option value="5층">5층</option>
+        <option value="6층">6층</option>
+        <option value="7층">7층</option>
+        <option value="8층">8층</option>
+        <option value="9층">9층</option>
+        <option value="10층">10층</option>
+    </select>
+    
+    <div id="roomList"></div>
+
+    <h2>비율</h2>
+    <p>체크한 호실 비율: <span id="checkedRoomRatio">0%</span></p>
+    <p>현재 층 조치 현황: <span id="floorYellowRatio">0%</span></p>
+    <p>전체 조치 현황: <span id="totalYellowRatio">0%</span></p>
+
+    <h2>저장 및 불러오기</h2>
+    <label for="fileName">파일명:</label>
+    <input type="text" id="fileName" placeholder="파일명을 입력하세요">
+    <button id="saveButton">저장</button>
+    <button id="loadButton">불러오기</button>
+
+    <div id="fileList"></div> <!-- 저장된 파일 목록 표시 영역 -->
+
+    <script src="에듀2.js"></script>
+</body>
+</html>
